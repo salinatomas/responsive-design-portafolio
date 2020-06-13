@@ -1,0 +1,614 @@
+/* Fuente de Iconos */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?6i4w2b');
+  src:  url('../fonts/icomoon.eot?6i4w2b#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?6i4w2b') format('truetype'),
+    url('../fonts/icomoon.woff?6i4w2b') format('woff'),
+    url('../fonts/icomoon.svg?6i4w2b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+/* ____________________________________________________________________ */
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal; 
+  /* font-style: italic; */
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  /* text-transform: uppercase; */
+  /* text-decoration: underline; */
+  color: white;
+  /*margin: 100px 520px 70px 30px; */
+  margin: 0; 
+}
+
+h1 strong {
+  color: #026fff;
+}
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+
+
+.header {
+  background-color: #1b2127;
+  color: white;
+
+  height: 70px;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+
+  flex-wrap: wrap; /* RD */
+}
+
+figure {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*saca los numeros de la lista ordenada ol*/
+}
+
+.menu {
+  height: inherit;
+}
+.header ol {
+  display: flex;
+  height: inherit;
+}
+.header ol li {
+  height: inherit;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+  
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+
+
+.hero {
+  height: 300px;
+  background-color: #1b2127;
+  /*background-image: url('../images/hero.jpg');*/
+  /* background-size: 500px 300px;  widht y height de la imagen  */
+ /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: wrap; /* RD */
+}
+.hero-image {
+  object-fit: cover; /*para que la imagen no se desproporcione*/ 
+}
+
+
+
+.portfolio {
+  background-color: #fafafa;
+  /* background: red; */
+
+  padding: 20px;
+}
+.project {
+  /* border-top: 10px solid red;
+  border-bottom: 10px solid pink;
+  border-left: 10px solid orange;
+  border-right: 10px solid green; */
+  /* color: blue; */
+
+  /* border-color: aqua; 
+  border-width: 5px;
+  border-style: solid; */
+  border: 1px solid gray;
+  border-radius: 10px;
+  /* border-top-left-radius: 25px; */
+  /* margin: 10px; */
+  margin-bottom: 15px; 
+  /* margin-right
+  margin-left
+  margin-top */
+  padding: 20px;
+  background: white;
+
+  /* width: 500px; 
+  height: 500px;
+  box-sizing: border-box; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap; /* RD */
+}
+.project-details {
+  width: 50%; /* RD */
+  /* margin: 0 auto; */
+}
+.project-imageContainer {
+  width: 50%; /* RD */
+}
+.project-imageContainer img{
+  max-width: 100%; /* Con respecto a su padre (50%) */
+} /* RD */
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+/* .project-date {
+  margin: 10px 0;
+} */
+.project-description {
+  font-size: 20px;
+}
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+
+
+.event-h2 {
+  margin-left: 20px;
+}
+
+
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap; /*para que los elementos caigan(los article)*/
+}
+.event { 
+  /* border: 1px solid red; */
+  margin: 1%; /* RD (estaba en 10px) */
+  width: 48%; /* RD (estaba eb 480px) */
+
+  border-radius: 10px;
+  /* overflow: initial; (por defecto) */
+  overflow: hidden; /* cuando (en este caso la imagen) se desborde del .event, se va a ocultar */
+  flex-shrink: 0; /* para que ocupen el tamaño designado */
+  background: #f4fbff;
+  background: #e3ecf1; 
+}
+.event-imageContainer img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover; /* cambia la proporcion y hace que quepa */
+}
+.event-detail {
+  margin: 20px 40px;
+  background-color: white;
+
+  margin-top: -50px;
+  position: relative;
+  padding: 20px;
+  text-align: center; /* alinea el texto (en este caso solo la url, por .event-description) */
+}
+.event-description {
+  text-align: left;
+}
+.event-url {
+  color: #056fff;
+  border: 1px solid; /* no hace falta ponerle color porque los bordes asimilan el "color del texo" */
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px 20px;
+}
+.html-video {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 170px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: wrap; /* RP */
+}
+.social {
+  
+}
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+
+  background-size: 50px 50px;
+  margin: 0 10px;
+}
+.social-link.twitter {
+  background-image: url('../images/twitter.svg');
+  /* background-size: 50px 50px; */
+}
+.social-link.facebook {
+  background-image: url('../images/facebook.svg');
+  /* background-size: 50px 50px; */
+}
+.social-link.github {
+  background-image: url('../images/github.svg');
+  /* background-size: 50px 50px; */
+}
+.social-link.instagram {
+  background-image: url('../images/instagram.svg');
+  /* background-size: 50px 50px; */
+}
+.form-email h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+}
+.form-email input {
+  border-color: gray;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+
+  /* background-color: transparent; */
+}
+.form-email button {
+  display: block;
+  margin-top: 5px;
+
+  border-style: solid; 
+
+  color: white;
+  background-color: transparent;
+  padding: 10px 0px; 
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+
+
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+
+  flex-wrap: wrap; /* RD */
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
+}
+
+
+.container {
+  /*border: 1px solid red;*/
+  max-width: 1000px; /* RD (el container depende del tamaño de sus hijos hasta que la suma de estos superen los 100px; los elementos se centran)*/
+  /* width: 100%; RD */
+  flex: 1; /* RD header (Toma todo el ancho disponible), es los mismo que poner width: 100%; */
+  
+  margin: 0 auto;
+
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+
+  flex-wrap: inherit;
+}
+
+
+
+/* VIDEO INSERTADO */
+
+.youtube-video {
+  /* width: 100%;
+  No nos sirve
+  height: auto; */ 
+
+  /* Haciendo que el video se estire para luego insertarlo en .flexible-video */
+  position: absolute; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 3; */
+}
+.flexible-video {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* Es un truco que determina el height porcentualmente con respecto al widht */
+  background: blue;
+
+  position: relative; /* Para que el video con position relative se inserte en este div */
+}
+
+
+/* _________________________Menu de Hamburguesa */
+.burger-button {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .8); /* (red, green, blue, opacidad) */
+  display: none; /* Para que aun no se vea */
+  
+  /* Ahora debemos alinearlo, podemos usar...pero no 
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  line-height: 40px; /* Centrado Vertical */
+  text-align: center; /* centrado horizontal */
+
+  position: fixed; /* Para que el elemento nos persiga */
+  z-index: 4; /* ya teniamos z-index 1 y 2 */
+  top: 5px;
+  left: 5px;
+}
+
+
+
+
+
+/* Responsive Design: Desktop First (empezamos del MQ mas alto) */
+
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 0 1em;
+  }
+
+
+  .hero {
+    height: auto;
+    position: relative; /* Para que .hero-image sea absoluto al .hero */
+
+    overflow: hidden; /* Para que lo que se desborda (en este caso la imagen) se oculte */
+    padding: 2em;
+  }
+  .hero-image {
+    position: absolute;
+    z-index: 1; /* Se posicionara abajo del h1 */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%; /* Para que se estire completamente */
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 2; /* Se posicionara encima de la imagen */
+  }
+
+
+  .portfolio {
+    padding: 0px;
+  }
+
+
+  .event-h2 {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger-button {
+    display: block; /* Para que tome las medidas de width i height y se muestre*/
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
+
+
+  .header {
+    display: block; 
+    height: auto;
+  }
+  .header ol {
+  display: block; /* tambien podemos usar initial (valor por defecto) */
+  }
+  .header ol li {
+    height: 50px;
+  }
+  .header a {
+    justify-content: center;
+    text-decoration: underline;
+    height: 40px;
+    font-size: 2em;
+    margin-bottom: .5em;
+
+  }
+  .header .logo {
+    text-align: center;
+  }
+
+  .menu { /* Menu de hamburguesa */
+    position: fixed;
+    background: rgba(5, 111, 255, .9);
+    z-index: 3;
+    top: 0;
+    left: -100vw; /* Para que se oculte */
+    width: 100vw;
+    /* height: 100vh; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+  .menu.is-active { /* Cuando ambas clases sean verdaderas */
+    left: 0; /* Para que se muestre */
+  }
+
+
+
+  .project {
+    display: block;
+  }
+  .project-imageContainer {
+    width: auto;
+    text-align: center; 
+  }
+  .project-details {
+    width: auto;
+    /* font-size: 16px; RD*/ /* esta por defecto en 16px, no hace falta ponerlo */
+  }
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: .3em;
+  } 
+  .project-course {
+    font-size: .7em;
+  } 
+  .project-date {
+    font-size: 1em;
+  } 
+  .project-url {
+    font-size: 1em;
+  } 
+  .project-description {
+    font-size: 1em;
+  } 
+  .project-course, 
+  .project-date, 
+  .project-url {
+    margin: .3em 0;
+  }
+
+  .event {
+    width: auto;
+    flex-shrink: initial; /* = flex-shrink: 1; (por defecto) */
+  }
+  .event img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+
+  .project-details {
+    font-size: 14px; 
+  }
+
+  .event-detail {
+    /* 1em = 16px */
+    margin: -2em .5em .5em .5em;   
+    padding: 1em; 
+  }
+
+  .contact {
+    height: auto;
+    padding: 1.5em 0;
+    display: block;
+    text-align: center;
+  }
+  .form-email button {
+    margin: 1em auto;
+  }
+  .form-email h3 {
+    margin-top: 0;
+  }
+  .social-link {
+    width: 45px;
+    height: 45px;
+    background-size: 100%;
+  }
+
+
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent; /* Para arreglar el margin collapsin */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  .hero {
+    padding: 2em 1em;
+  }
+}
+
